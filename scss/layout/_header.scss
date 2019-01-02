@@ -1,6 +1,6 @@
 header {
 	height: $header-size;
-	background-color: #1976d2;
+	background-color: $color-main;
 }
 
 .contact {
@@ -30,6 +30,9 @@ header {
 		}
 		& a {
 			cursor: pointer;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
@@ -42,9 +45,11 @@ header {
 		width: 1.6rem * 1.7;
 		line-height: 1.6rem * 1.6;
 		font-size: 1.9rem;
+		transition: all 0.7s;
 		&:hover {
 			background-color: #f95d5a;;			
 			color: #fff;
+			transform: scale(1.1)
 		}
 	}
 }
