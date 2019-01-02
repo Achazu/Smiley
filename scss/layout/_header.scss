@@ -1,0 +1,50 @@
+header {
+	height: $header-size;
+	background-color: #1976d2;
+}
+
+.contact {
+	display: flex;
+	height: $header-size;
+	justify-content: space-between;
+	align-items: center;
+
+	&__box {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 1rem;
+
+		& a {
+			padding: 0 .5rem;
+		}
+	}
+
+	&__data {
+		display: flex;
+		padding: 0 1rem;
+		&>* {
+			color: #dddddd;
+			font-size: 1.4rem;
+			font-weight: 400;
+			padding: 0 0.2rem;
+		}
+		& a {
+			cursor: pointer;
+		}
+	}
+
+	&__icon--round {
+		background-color: #fff;
+		color: #1976d2;
+		text-align: center;
+		padding: .3rem;
+		border-radius: 100%;
+		width: 1.6rem * 1.7;
+		line-height: 1.6rem * 1.6;
+		font-size: 1.9rem;
+		&:hover {
+			background-color: #f95d5a;;			
+			color: #fff;
+		}
+	}
+}

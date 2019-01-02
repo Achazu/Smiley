@@ -1,0 +1,17 @@
+// *!
+// em, rem is not affected by the root element in media queries. It assumes font size coming from the browser.
+// so em = 16px
+// */
+
+
+@mixin respond($breakpoint){
+	@if $breakpoint == small-size {
+		@media only screen and (max-width: 37.5em) {@content}; // 600px
+	}	
+	@if $breakpoint == medium-size {
+		@media only screen and (max-width: 49.13em) {@content};	//900px
+	}
+	@if $breakpoint == large-size {
+		@media only screen and (min-width: 75em) {@content};	//1200px
+	}
+}
