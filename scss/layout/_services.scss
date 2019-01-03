@@ -1,0 +1,36 @@
+.services-grid{
+	display: grid;
+	// grid-template: 20rem / 1fr repeat(6, 24.3rem) 1fr;
+	background-color: lightblue;
+	grid-template-columns: 1fr repeat(6, 24rem) 1fr;
+	grid-template-rows: 20rem; 
+}
+
+.services-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 2rem;
+	& img {
+		margin-bottom: 1rem;
+	}
+	&--filled:nth-child(odd){
+		background-color: $color-light-blue;
+	}
+	&--filled:nth-child(even){
+		background-color: $color-main;
+	}
+	&--empty{
+		&:first-of-type{
+			background-color: $color-main;
+		}
+		&:last-of-type{
+			background-color: $color-light-blue;
+		}
+	}
+}

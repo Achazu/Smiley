@@ -1,0 +1,22 @@
+.section-offer {
+	max-width: min-content;
+	display: grid;
+	grid-template: repeat(3, 11.5rem) / repeat(3, 35.2rem);
+	grid-gap: 2.5rem;
+	margin: 10rem auto;
+}
+
+.offer-item {
+	display: grid;
+	grid-template-columns: min-content 1fr;
+	grid-gap: 0 1.5rem;
+
+	& img {
+		align-self: center;
+	}
+
+	& h4 {
+		align-self: center;
+	}
+}
+
